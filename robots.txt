@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://vl24ua-lgtm.github.io/sweet-joyCorporation/sitemap.xml

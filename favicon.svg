@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <defs>
+    <linearGradient id="candyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ff4b9b"/>
+      <stop offset="50%" stop-color="#d81b78"/>
+      <stop offset="100%" stop-color="#8a0f4c"/>
+    </linearGradient>
+    <linearGradient id="swirlGrad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.95"/>
+      <stop offset="100%" stop-color="#ffe0ee" stop-opacity="0.7"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="125%" height="125%">
+      <feDropShadow dx="0" dy="2" stdDeviation="2" flood-color="#4a1442" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <!-- Left twist -->
+  <path d="M 17 32 L 4 19 C 7 25 7 39 4 45 Z" fill="#d81b78" opacity="0.85" />
+  <path d="M 16 32 L 6 23 C 8 28 8 36 6 41 Z" fill="#ff77b7" opacity="0.6" />
+
+  <!-- Right twist -->
+  <path d="M 47 32 L 60 19 C 57 25 57 39 60 45 Z" fill="#d81b78" opacity="0.85" />
+  <path d="M 48 32 L 58 23 C 56 28 56 36 58 41 Z" fill="#ff77b7" opacity="0.6" />
+
+  <!-- Main candy body -->
+  <circle cx="32" cy="32" r="18" fill="url(#candyGrad)" filter="url(#shadow)"/>
+
+  <!-- Swirl stripes -->
+  <path d="M 23 18 C 28 22 36 22 41 18 C 38 15 26 15 23 18 Z" fill="url(#swirlGrad)"/>
+  <path d="M 18 27 C 26 31 38 31 46 27 C 44 23 20 23 18 27 Z" fill="url(#swirlGrad)"/>
+  <path d="M 18 37 C 26 33 38 33 46 37 C 44 41 20 41 18 37 Z" fill="url(#swirlGrad)"/>
+  <path d="M 23 46 C 28 42 36 42 41 46 C 38 49 26 49 23 46 Z" fill="url(#swirlGrad)"/>
+
+  <!-- Glossy shine dot -->
+  <circle cx="26" cy="24" r="2.5" fill="#ffffff" opacity="0.85"/>
+</svg>
